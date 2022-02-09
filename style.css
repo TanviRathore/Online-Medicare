@@ -1,0 +1,13 @@
+.btn{
+    background-image: linear-gradient(to right,
+                    rgb(26, 255, 255) 0%,
+                    rgb(0, 204, 255) 45%,
+                    rgb(26, 255, 255) 100%); 
+    background-size: 200% auto; transition: 0.5s;
+}
+
+
+.btn:hover{
+    background-position: right center;
+    color: white;
+}
