@@ -1,8 +1,18 @@
+.navbar{
+    background-image: linear-gradient(to right,
+    rgb(21,45,81) 0%,
+    rgb(71, 100, 145) 60%,
+    rgb(21,45,81)  100%); 
+    background-color: rgb(21,45,81); 
+    padding: 10px 70px ;
+    background-size: 200% auto; transition: 0.5s;
+}
+
 .btn{
     background-image: linear-gradient(to right,
-                    rgb(26, 255, 255) 0%,
-                    rgb(0, 204, 255) 45%,
-                    rgb(26, 255, 255) 100%); 
+                    rgb(231,76,60) 0%,
+                    rgb(255, 166, 0) 45%,
+                    rgb(231,76,60)  100%); 
     background-size: 200% auto; transition: 0.5s;
 }
 
