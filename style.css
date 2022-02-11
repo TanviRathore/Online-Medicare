@@ -12,6 +12,7 @@
     background-color: rgb(21,45,81); 
     padding: 10px 70px ;
     background-size: 200% auto; transition: 0.5s;
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
 }
 
 .btn{
