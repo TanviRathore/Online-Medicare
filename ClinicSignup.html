@@ -12,6 +12,18 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Medicare</title>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("password");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+        }
+    </script>
+
 </head>
 <body style="background-color: rgb(253, 247, 247); font-family: 'Satisfy', cursive; overflow-x: hidden;">
     
@@ -37,32 +49,35 @@
             <form>
                 <div class="form-group">
                   <label for="Cname">Name of Clinic</label>
-                  <input type="text" class="form-control" id="Cname" aria-describedby="Clinic name" placeholder="Enter Clinic Name"> 
+                  <input type="text" class="form-control" id="Cname" aria-describedby="Clinic name" placeholder="Enter Clinic Name" required> 
                 </div>
                 <div class="form-group">
                     <label for="docname">Name of the Doctor</label>
-                    <input type="text" class="form-control" id="docname" aria-describedby="Doctor name" placeholder="Enter Name"> 
+                    <input type="text" class="form-control" id="docname" aria-describedby="Doctor name" placeholder="Enter Name" required> 
                 </div>
                 <div class="form-group">
                     <label for="speciality">Specialist of</label>
-                    <input type="text" class="form-control" id="speciality" aria-describedby="Specialist" placeholder="Enter Specialist"> 
+                    <input type="text" class="form-control" id="speciality" aria-describedby="Specialist" placeholder="Enter Specialist" required> 
                 </div>
                 <div class="form-group">
-                    <label for="exampleInputEmail1">Email address</label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <label for="demail">Email address</label>
+                    <input type="email" class="form-control" id="demail" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                 </div>
                 <div class="form-group">
-                  <label for="exampleInputPassword1">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                  <label for="password">Password</label>
+                  <input type="password" class="form-control" id="password" placeholder="Password" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters">
+                  <input type="checkbox" onclick="myFunction()">Show Password
                 </div>
                 <div class="form-group">
                     <label for="Contact">Contact Number</label>
-                    <input type="number" class="form-control" id="Contact" placeholder="Contact">
+                    <input type="number" class="form-control" id="Contact" placeholder="Contact"required pattern="[6-9] [0-9]+"
+                    title="Enter valid number">
                 </div>
                 <div class="form-group">
                     <label for="fee">Consultancy fee</label>
-                    <input type="number" class="form-control" id="fee" placeholder="Enter consultancy fee">
+                    <input type="number" class="form-control" id="fee" placeholder="Enter consultancy fee" required pattern="[0-9]+">
                 </div>
                 <div class="form-group">
                     <label for="facility">Medical facilities Available</label>
@@ -74,11 +89,11 @@
                 </div>
                 <div class="form-group">
                     <label for="Cordinates">Location Cordinates</label>
-                    <input type="text" class="form-control" id="Cordinates" placeholder="Cordinates">
+                    <input type="text" class="form-control" id="Cordinates" placeholder="Cordinates" required>
                 </div>
                 <div class="form-group">
                     <label for="time">Timming</label>
-                    <input type="text" class="form-control" id="time" placeholder="Enter timings">
+                    <input type="text" class="form-control" id="time" placeholder="Enter timings" required>
                 </div><br>
                 <button type="submit" class="btn text-white">Sign up</button>
             </form>
