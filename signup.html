@@ -51,6 +51,11 @@
                   <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" required> 
                 </div>
                 <div class="form-group">
+                    <label for="name">User Name</label>
+                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Enter Name" required pattern="^[a-zA-Z0-9]([._-](?![._-])|[a-zA-Z0-9]){3,18}[a-zA-Z0-9]$"
+                    title="Must start with an alphanumeric characterfollow by a dot, hyphen, or underscore, and at least 5 or more characters"> 
+                  </div>
+                <div class="form-group">
                     <label for="exampleInputEmail1">Email address</label>
                     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" required>
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
